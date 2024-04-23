@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Canvas Coret-Coret dengan Warna</title>
+</head>
+<body>
+    <input type="color" id="colorPicker">
+    <canvas id="myCanvas" width="400" height="400" style="border:1px solid grey;"></canvas>
+    <script>
+        var canvas = document.getElementById('myCanvas');
+        var ctx = canvas.getContext('2d');
+        var isDrawing = false;
+        var lastX = 0;
+        var lastY = 0;
+        var colorPicker = document.getElementById('colorPicker');
+
+        canvas.addEventListener('mousedown', function(e) {
+            isDrawing = true;
+            [lastX, lastY] = [e.offsetX, e.offsetY];
+        });
+
+        canvas.addEventListener('mousemove', function(e) {
+            if (isDrawing) {
+                ctx.strokeStyle = colorPicker.value;
+                ctx.beginPath();
+                ctx.moveTo(lastX, lastY);
+                ctx.lineTo(e.offsetX, e.offsetY);
+                ctx.stroke();
+                [lastX, lastY] = [e.offsetX, e.offsetY];
+            }
+        });
+
+        canvas.addEventListener('mouseup', function() {
+            isDrawing = false;
+        });
+
+        canvas.addEventListener('mouseleave', function() {
+            isDrawing = false;
+        });
+    </script>
+</body>
+</html>
