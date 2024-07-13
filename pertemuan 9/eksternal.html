@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Desain Web</h1>
+        <nav>
+            <ul>
+                <li>Beranda</li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <table>
+            <thead>
+                <tr>
+                    <th>nama</th>
+                    <th>nim</th>
+                    <th>alamat</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>mora</td>
+                    <td>1123102153</td>
+                    <td>kebalenan</td>
+                </tr>
+                <tr>
+                    <td>sysilia</td>
+                    <td>1123102113</td>
+                    <td>rogojampi</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <form action="/submit-form" method="POST">
+            <label for="name">Nama:</label>
+            <input type="text" id="name" name="name" required><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br>
+
+            <label for="message">Pesan:</label><br>
+            <textarea id="message" name="message" rows="4" cols="50" required></textarea><br>
+
+            <input type="submit" value="Kirim">
+        </form>
+    </main>
+
+    <footer>
+        <p>By Maura Nastia</p>
+    </footer>
+
+
+</body>
+</html>
