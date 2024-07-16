@@ -1,0 +1,351 @@
+        *, body {
+            padding: 0;
+            margin: 0;
+            font-family: "Poppins", sans-serif;
+            box-sizing: border-box;
+        }
+
+        /* Background settings */
+        body {
+            background-image: url('/assets/img/CV.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        /* Navigation styles */
+        nav {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            padding: 20px;
+            background-color: white;
+        }
+
+        nav ul {
+            display: flex;
+            list-style-type: none;
+            gap: 30px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #100303;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #0066cc;
+        }
+
+        /* Special style for specific item */
+        nav ul li a[href="#new-item"] {
+            font-weight: bold;
+            color: #ff6600;
+        }
+
+        /* Header styles */
+        header {
+            background-color: #878786;
+            color: #131313;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .wrapper {
+            padding: 20vh;
+            text-align: center;
+        }
+
+        .wrapper h1 {
+            font-size: 70px;
+            font-family: "slab";
+        }
+
+        .wrapper h4 {
+            font-size: 40px;
+        }
+
+        .wrapped img {
+            width: 300px;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+
+        .wrapped p {
+            width: 50%;
+            line-height: 1.6;
+        }
+
+
+        .about {
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        .about-image {
+            width: 300px;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+
+        .about h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
+            font-family: "macarons";
+        }
+
+        .about p {
+            max-width: 600px;
+            margin: 0 auto;
+            line-height: 1.7;
+        }
+
+        .address {
+            text-align: center;
+            margin-bottom: 30px;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        
+        .address a {
+            display: inline-block;
+            margin: 10px 15px;
+            color: #0066cc;
+            text-decoration: none;
+            font-size: 1.1em;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+        
+        .address img {
+            width: 50px;
+        }
+        
+        .address a:hover {
+            color: #004080;
+            transform: translateY(-2px);
+        }
+        
+        form {
+            max-width: 500px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            padding: 30px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+        
+        }
+        
+        form input, form textarea {
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            width: 100%;
+            font-size: 16px;
+            transition: border-color 0.3s ease;
+        }
+        
+        form input:focus, form textarea:focus {
+            border-color: #0066cc;
+            outline: none;
+        }
+        
+        form input[type="submit"] {
+            background-color: #0066cc;
+    
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        form input[type="submit"]:hover {
+            background-color: #004080;
+        }
+
+        h1 {
+            text-align: center;
+            color: #0d0d0e;
+            margin-bottom: 30px;
+            font-size: 2.5em;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        #projects h2 {
+            text-align: center; /* Menengahkan teks */
+        }
+
+        .project {
+            display: flex; /* Menggunakan flexbox */
+            justify-content: space-around; /* Menyisipkan ruang di antara gambar */
+            margin-bottom: 20px; /* Jarak antara setiap proyek */
+        }
+
+        .project {
+            width: 1250px; /* Lebar proyek */
+            padding: 30px;
+            border-radius: 8px;
+            overflow: hidden; /* Memastikan overflow tidak terjadi */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Bayangan untuk efek ketinggian */
+            text-align: center; /* Teks di tengah */
+        }
+
+        .project:hover {
+            transform: translateY(-5px); /* Efek hover untuk sedikit mengangkat proyek */
+            transition: transform 0.3s ease;
+        }
+
+        .project img {
+            width: 100%; /* Ukuran gambar (dapat disesuaikan) */
+            height: auto;
+            object-fit: cover;
+            border-radius: 8px 8px 0 0; /* Bentuk sudut gambar */
+        }
+
+        .project-info {
+            padding: 20px;
+        }
+
+        .project h3 {
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .project p {
+            font-size: 1.1rem;
+            color: #555;
+            line-height: 1.6;
+        }
+
+        .project a {
+            text-decoration: none; /* Menghapus garis bawah pada link */
+            color: inherit; /* Mengambil warna teks bawaan */
+        }
+
+        .header {
+            text-align: center;
+            padding: 50px 20px;
+            margin-bottom: 30px;
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            font-size: 1.2rem;
+            color: #666;
+            text-align: center;
+        }
+
+        /* Responsive styles */
+        @media screen and (max-width: 768px) {
+            nav {
+                justify-content: center;
+            }
+
+            nav ul {
+                gap: 15px;
+            }
+
+            .header {
+                font-size: 36px;
+                padding: 5vh 0;
+            }
+
+            .wrapped {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .wrapped img {
+                width: 200px;
+                height: 200px;
+            }
+
+            .wrapped p {
+                width: 100%;
+            }
+
+            .about-image {
+                width: 150px;
+                height: 150px;
+            }
+
+            form {
+                padding: 0 10px;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+                gap: 10px;
+            }
+
+            .header {
+                font-size: 28px;
+            }
+
+            .wrapped img {
+                width: 150px;
+                height: 150px;
+            }
+
+            .about-image {
+                width: 120px;
+                height: 120px;
+            }
+
+            .about h2 {
+                font-size: 20px;
+            }
+
+            form {
+                padding: 0 5px;
+            }
+        }
+
+        @media screen and (max-width: 1200px) {
+            .project {
+                width: 45%; /* Adjust width for better layout on medium screens */
+                margin: 0 auto 20px; /* Center and add bottom margin */
+            }
+        }
+        
+        @media screen and (max-width: 768px) {
+            .project {
+                width: 100%; /* Full width on smaller screens */
+                margin: 0 auto 20px; /* Center and add bottom margin */
+            }
+        }
+        
+
+        /* Styling untuk footer */
+        footer {
+            color: rgb(10, 9, 9);
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 50px;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 1rem;
+        }
